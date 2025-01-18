@@ -1,0 +1,39 @@
+.about-container {
+    background-color: #F9F9F9;
+  }
+  
+  .about-part {
+    width: 90%;
+    margin: auto;
+    padding-top: 100px;
+  }
+  
+  .about-1 {
+    box-shadow: 1px 1px 4px rgb(197, 194, 194);
+    margin-bottom: 20px;
+  }
+  
+  .about-1 a p {
+    margin-bottom: 0px;
+    padding: 15px;
+  }
+  
+  /* Animation effects */
+  [data-aos] {
+    opacity: 0;
+    transition-property: transform, opacity;
+    transition-timing-function: ease-out;
+  }
+  
+  [data-aos].aos-animate {
+    opacity: 1;
+  }
+  
+  [data-aos="fade-up"] {
+    transform: translateY(50px);
+  }
+  
+  [data-aos="fade-up"].aos-animate {
+    transform: translateY(0);
+  }
+  

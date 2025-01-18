@@ -1,0 +1,45 @@
+.Navbar {
+  width: 100%;
+  margin: auto;
+  padding: 20px 0;
+  position: relative; /* Initially relative to the document flow */
+  background-color: #000000;
+  transform: translateY(-100%); /* Initially positioned off-screen */
+  opacity: 0; /* Hidden initially */
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out; /* Add transform and opacity transitions */
+  z-index: 1000;
+}
+
+.Navbar.slide-down {
+  transform: translateY(0); /* Slide down into view */
+  opacity: 1; /* Make visible */
+}
+
+.Navbar.scrolled {
+  position: fixed; /* Make navbar fixed after scrolling */
+  top: 0; /* Stick to the top of the page */
+  left: 0;
+  right: 0;
+}
+
+
+.navbar-list > ul > li > a {
+  color: #ffffff;
+  font-size: 17px;
+}
+
+.navbar-list > ul > li > a:hover {
+  color: #392ddd;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar-list {
+      display: none;
+  }
+}
+
+@media only screen and (max-width: 890px) {
+  .dots {
+      display: none;
+  }
+}

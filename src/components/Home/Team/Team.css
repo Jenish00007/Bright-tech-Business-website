@@ -1,0 +1,50 @@
+.rs-team {
+    position: relative;
+}
+
+.team-container {
+    display: flex;
+    gap: 30px;
+    padding: 20px 0;
+    width: calc(300px * 6); /* Total width for 6 team items */
+    animation: scrollRightToLeft 15s linear infinite;
+}
+
+@keyframes scrollRightToLeft {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.team-item-wrap {
+    flex: 0 0 auto;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.team-wrap .image-inner img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.team-content {
+    padding: 10px;
+}
+
+.person-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.designation {
+    font-size: 14px;
+    color: #666;
+}

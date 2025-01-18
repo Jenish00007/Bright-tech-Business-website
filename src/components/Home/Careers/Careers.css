@@ -1,0 +1,95 @@
+.careers-container {
+    width: 100%;
+    padding: 100px;
+    box-sizing: border-box;
+  }
+  
+  .careers-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .careers-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  
+  .careers-form {
+    flex: 1;
+    max-width: 50%;
+  }
+  
+  .careers-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
+  .careers-form input,
+  .careers-form textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .careers-form textarea {
+    resize: none;
+    height: 80px;
+  }
+  
+  .file-note {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 15px;
+  }
+  
+  .submit-btn {
+    padding: 10px 20px;
+    background-color: #512DA8;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .submit-btn:hover {
+    background-color: #673AB7;
+  }
+  
+  .careers-image-container {
+    flex: 1;
+    max-width: 45%;
+    text-align: center;
+  }
+  
+  .careers-image {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  .careers-description {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  /* AOS Animation Customizations */
+  [data-aos] {
+    opacity: 0;
+    transform: translateY(50px); /* Start from below */
+    transition: all 1s ease-out;
+  }
+  
+  [data-aos].aos-animate {
+    opacity: 1;
+    transform: translateY(0); /* Move to original position */
+  }
+  
