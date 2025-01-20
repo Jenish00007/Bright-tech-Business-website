@@ -10,7 +10,7 @@ import './App.css';
 
 function App() {
     return (
-        <Router basename="/brightechsoftware.com">  {/* Set the basename here */}
+        <Router > 
             <div>
                 {/* <Toolsbar /> */}
                 {/* <Navbar /> */}
