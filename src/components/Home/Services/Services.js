@@ -6,7 +6,6 @@ import icon1 from '../../../images/services/icon/service-shape.png';
 import icon2 from '../../../images/services/icon/blue-flexible-cms.png';
 import icon3 from '../../../images/services/icon/blue-page-speed.png';
 import icon4 from '../../../images/services/icon/blue-ecommerce.png';
-import Service from './Service';
 
 const servicesData = [
     {
@@ -42,14 +41,24 @@ function Services() {
 
     return (
         <div className="service-container">
-            <div className="text-center pt-5 w-50 m-auto" data-aos="fade-up">
-                <h4 style={{ fontWeight: '300', marginBottom: '10px' }}>SERVICES THAT WE PROVIDE DEDICATEDLY</h4>
-                <h2 style={{ fontSize: '' }}>OUR SERVICES</h2>
+            <div className="service-header" data-aos="fade-up">
+                <h4 className="service-subtitle">SERVICES THAT WE PROVIDE DEDICATEDLY</h4>
+                <h2 className="service-title">OUR SERVICES</h2>
             </div>
 
-            <div className="row service">
-                {servicesData.map(data => (
-                    <Service data={data} key={data.id}></Service>
+            <div className="service-grid">
+                {servicesData.map((data) => (
+                    <div className="service-item" data-aos="fade-up" key={data.id}>
+                        <div className="service-box">
+                            <div className="icon-part">
+                                <img src={data.icon} alt={data.name} />
+                            </div>
+                            <div className="details-part">
+                                <h4 className="service-name">{data.name}</h4>
+                                <p className="service-description">{data.description}</p>
+                            </div>
+                        </div>
+                    </div>
                 ))}
             </div>
         </div>

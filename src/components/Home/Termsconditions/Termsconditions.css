@@ -1,54 +1,144 @@
-/* Main container styling */
 .terms-container {
-    margin-top: 80px;
+    /* margin-top: 80px; */
     width: 100%;
+    min-height: 100vh;
     background-image: url('../../../images/bg/footer-bg5.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     color: #fff;
     padding: 20px 0;
+    display: flex;
+    flex-direction: column;
 }
 
-/* Header styling */
-.content-wrapper h4 {
+/* Header section */
+.content-wrapper {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+@media (max-width: 768px) {
+    .content-wrapper {
+        width: 95%;
+        padding: 15px 0;
+    }
+}
+
+.terms-title {
     font-size: 2rem;
-    font-weight: 400;
+    font-weight: 300;
+    text-align: center;
     color: #fff;
+    margin-bottom: 30px;
 }
 
-/* Terms content styling */
+@media (max-width: 768px) {
+    .terms-title {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+}
+
+/* Main content section */
 .terms-content {
     width: 90%;
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 20px;
 }
 
-.terms-content h2 {
+@media (max-width: 768px) {
+    .terms-content {
+        width: 95%;
+        padding: 15px;
+    }
+}
+
+.terms-section {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .terms-section {
+        padding: 20px;
+    }
+}
+
+.terms-block {
+    margin-bottom: 30px;
+}
+
+.terms-block h2 {
     font-size: 1.8rem;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     color: #fff;
 }
 
-.terms-content p,
-.terms-content ul {
+@media (max-width: 768px) {
+    .terms-block h2 {
+        font-size: 1.4rem;
+    }
+}
+
+.terms-block p {
     font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.terms-block ul {
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.terms-block ul li {
+    margin-bottom: 10px;
     line-height: 1.6;
 }
 
-.terms-content ul {
-    padding-left: 20px;
+@media (max-width: 768px) {
+    .terms-block p,
+    .terms-block ul li {
+        font-size: 0.95rem;
+    }
 }
 
-.terms-content ul li {
-    margin-bottom: 10px;
+.contact-info {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .terms-link {
     color: #00bcd4;
     text-decoration: underline;
+    transition: color 0.3s ease;
 }
 
 .terms-link:hover {
+    color: #fff;
     text-decoration: none;
+}
+
+@media (max-width: 480px) {
+    .terms-container {
+        margin-top: 60px;
+    }
+
+    .terms-content {
+        padding: 10px;
+    }
+
+    .terms-section {
+        padding: 15px;
+    }
+
+    .terms-block {
+        margin-bottom: 20px;
+    }
 }
