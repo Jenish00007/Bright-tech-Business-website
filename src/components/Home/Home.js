@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import Navbar from './Toolsbar/Navbar/Navbar';
-import Toolsbar from './Toolsbar/Toolsbar';
+// import Toolsbar from './Toolsbar/Toolsbar';
 import './Home.css';
 import Slider from './Slider/Slider';
 import Features from './Features/Features';
@@ -42,7 +42,7 @@ function Home() {
     return (
         <div>
             <div className="nav-header">
-                <Toolsbar />
+                {/* <Toolsbar /> */}
                 <Navbar scrollToSection={scrollToSection} />
                 <Slider />
             </div>

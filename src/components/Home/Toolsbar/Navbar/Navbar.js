@@ -5,56 +5,111 @@ import logo from '../../../../images/logo.jpg';
 function Navbar({ scrollToSection }) {
     const [isLoaded, setIsLoaded] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
     useEffect(() => {
         setIsLoaded(true);
 
-        // Handle scroll event to toggle the navbar state
         const handleScroll = () => {
-            if (window.scrollY > 100) {
-                setIsScrolled(true); // When scrolled more than 100px, make the navbar sticky
-            } else {
-                setIsScrolled(false); // Reset to normal position when near the top
-            }
+            setIsScrolled(window.scrollY > 100);
         };
 
         window.addEventListener('scroll', handleScroll);
-
-        // Cleanup the event listener when the component unmounts
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
+        return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
+    const toggleMobileMenu = () => {
+        setIsMobileMenuOpen(!isMobileMenuOpen);
+    };
+
+    const handleNavClick = (section) => {
+        scrollToSection(section);
+        setIsMobileMenuOpen(false);
+    };
+
+    const navItems = [
+        { id: 'home', label: 'Home' },
+        { id: 'about', label: 'About' },
+        { id: 'services', label: 'Services' },
+        { id: 'features', label: 'Products' },
+        { id: 'careers', label: 'Careers' },
+        { id: 'portfolio', label: 'Portfolio' },
+        { id: 'team', label: 'Team' },
+        { id: 'contact', label: 'Contact' },
+        { id: 'blog', label: 'Blog' }
+    ];
+
+    const socialLinks = [
+        { url: 'https://facebook.com', icon: 'fa-facebook' },
+        { url: 'https://twitter.com', icon: 'fa-twitter' },
+        { url: 'https://google.com', icon: 'fa-google' },
+        { url: 'https://instagram.com', icon: 'fa-instagram' },
+        { url: 'https://youtube.com', icon: 'fa-youtube-play' },
+        { url: 'https://wa.me/123456789', icon: 'fa-whatsapp' }
+    ];
+
     return (
-        <div className={`Navbar ${isLoaded ? 'slide-down' : ''} ${isScrolled ? 'scrolled' : ''}`}>
-            <div className="row d-flex align-items-center" style={{ margin: 'auto' }}>
-                <div className="col-md-4 toolsbar d-flex align-items-center">
-                    <img src={logo} alt="logo" style={{ width: '60px', height: 'auto', marginRight: '10px' }} />
-                    <span style={{ fontSize: '1.3rem', fontWeight: 'bold', color: 'white' }}>Brightech Software Solution</span>
-                </div>
-                <div className="col-md-7 navbar-list">
-                    <ul className="d-flex justify-content-around">
-                        <li><a href="#home" onClick={(e) => { e.preventDefault(); scrollToSection('home'); }}>Home</a></li>
-                        <li><a href="#about" onClick={(e) => { e.preventDefault(); scrollToSection('about'); }}>About</a></li>
-                        <li><a href="#services" onClick={(e) => { e.preventDefault(); scrollToSection('services'); }}>Services</a></li>
-                        <li><a href="#features" onClick={(e) => { e.preventDefault(); scrollToSection('features'); }}>Products</a></li>
-                        <li><a href="#careers" onClick={(e) => { e.preventDefault(); scrollToSection('careers'); }}>Careers</a></li>
-                        <li><a href="#portfolio" onClick={(e) => { e.preventDefault(); scrollToSection('portfolio'); }}>Portfolio</a></li>
-                        <li><a href="#team" onClick={(e) => { e.preventDefault(); scrollToSection('team'); }}>Team</a></li>
-                        <li><a href="#contact" onClick={(e) => { e.preventDefault(); scrollToSection('contact'); }}>Contact</a></li>
-                        <li><a href="#blog" onClick={(e) => { e.preventDefault(); scrollToSection('blog'); }}>Blog</a></li>
-                    </ul>
-                </div>
-                <div className="col-md-1 toolsbar">
-                    <div className="expand-btn-inner dots">
-                        <ul className="d-flex justify-content-around">
-                            <li></li>
-                        </ul>
+        <>
+            <div className="toolbar-area">
+                <div className="inner-tools-area">
+                    <div className="row">
+                        <div className="col-md-2 toolsbar">
+                            <ul className="text-left">
+                            </ul>
+                        </div>
+                        <div className="col-md-8 toolsbar toolbar-center">
+                            <ul>
+                                <li>
+                                    <i className="fa fa-phone"></i>
+                                    <a href="tel:+919688192922">+91 9688192922</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div className="col-md-2 toolsbar">
+                            <ul className="social-links">
+                                {socialLinks.map((link, index) => (
+                                    <li key={index}>
+                                        <a href={link.url} target="_blank" rel="noopener noreferrer">
+                                            <i className={`fa ${link.icon}`}></i>
+                                        </a>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+
+            <div className={`Navbar ${isLoaded ? 'slide-down' : ''} ${isScrolled ? 'scrolled' : ''}`}>
+                <div className="navbar-container">
+                    <div className="navbar-brand">
+                        <img src={logo} alt="logo" className="navbar-logo" />
+                        <span className="company-name">Brightech Software Solution</span>
+                    </div>
+
+                    <div className="navbar-menu">
+                        <button className="burger-menu" onClick={toggleMobileMenu}>
+                            <i className="fa fa-bars"></i>
+                        </button>
+
+                        <nav className={`navbar-links ${isMobileMenuOpen ? 'active' : ''}`}>
+                            {navItems.map((item) => (
+                                <a
+                                    key={item.id}
+                                    href={`#${item.id}`}
+                                    onClick={(e) => {
+                                        e.preventDefault();
+                                        handleNavClick(item.id);
+                                    }}
+                                >
+                                    {item.label}
+                                </a>
+                            ))}
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </>
     );
 }
 

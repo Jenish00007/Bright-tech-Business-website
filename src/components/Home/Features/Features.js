@@ -35,10 +35,10 @@ function Features() {
         ))}
       </div>
       <div className="text-center mt-5" data-aos="fade-up">
-        <p style={{ fontWeight: '600' }}>
+        {/* <p style={{ fontWeight: '600' }}>
           Increase your business success with technology.{' '}
           <button className="link-btn">Let’s get started</button>
-        </p>
+        </p> */}
       </div>
     </div>
   );

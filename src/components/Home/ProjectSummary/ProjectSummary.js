@@ -34,7 +34,7 @@ function ProjectSummary() {
                 </div>
 
                 <div className="col-md-3 text-center" data-aos="fade-up">
-                    <h2 className="text-white">300+</h2>
+                    <h2 className="text-white">30+</h2>
                     <h4 className="text-white" style={{ fontWeight: '400' }}>
                         PROJECT COMPLETE
                     </h4>

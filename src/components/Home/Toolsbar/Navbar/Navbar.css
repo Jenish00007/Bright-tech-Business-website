@@ -1,45 +1,171 @@
+.toolbar-area {
+  background-color: #000000;
+  padding: 10px 0;
+  border-bottom: 1px solid grey;
+  color: white;
+}
+
+.inner-tools-area {
+  width: 90%;
+  margin: auto;
+}
+
+.toolsbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.toolsbar > ul > li {
+  padding: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.toolsbar > ul > li > a {
+  color: white;
+  text-decoration: none;
+}
+
+.social-links {
+  display: flex;
+  justify-content: space-around;
+}
+
+.toolbar-center ul {
+  display: flex;
+  justify-content: center;
+}
+
+/* Navbar Styles */
 .Navbar {
   width: 100%;
-  margin: auto;
-  padding: 20px 0;
-  position: relative; /* Initially relative to the document flow */
   background-color: #000000;
-  transform: translateY(-100%); /* Initially positioned off-screen */
-  opacity: 0; /* Hidden initially */
-  transition: transform 0.5s ease-out, opacity 0.5s ease-out; /* Add transform and opacity transitions */
+  position: relative;
+  transform: translateY(-100%);
+  opacity: 0;
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
   z-index: 1000;
 }
 
 .Navbar.slide-down {
-  transform: translateY(0); /* Slide down into view */
-  opacity: 1; /* Make visible */
+  transform: translateY(0);
+  opacity: 1;
 }
 
 .Navbar.scrolled {
-  position: fixed; /* Make navbar fixed after scrolling */
-  top: 0; /* Stick to the top of the page */
+  position: fixed;
+  top: 0;
   left: 0;
   right: 0;
 }
 
-
-.navbar-list > ul > li > a {
-  color: #ffffff;
-  font-size: 17px;
+.navbar-container {
+  width: 90%;
+  margin: auto;
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.navbar-list > ul > li > a:hover {
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar-logo {
+  width: 60px;
+  height: auto;
+}
+
+.company-name {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: white;
+}
+
+.navbar-menu {
+  display: flex;
+  align-items: center;
+}
+
+.burger-menu {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.burger-menu:hover {
   color: #392ddd;
 }
 
-@media only screen and (max-width: 600px) {
-  .navbar-list {
+.navbar-links {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #392ddd;
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 1200px) {
+  .toolbar-area {
       display: none;
   }
 }
 
-@media only screen and (max-width: 890px) {
-  .dots {
+@media screen and (max-width: 900px) {
+  .burger-menu {
+      display: block;
+  }
+
+  .navbar-links {
       display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background-color: #000000;
+      flex-direction: column;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar-links.active {
+      display: flex;
+  }
+
+  .navbar-links a {
+      padding: 10px 0;
+  }
+
+  .company-name {
+      font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navbar-logo {
+      width: 40px;
+  }
+
+  .company-name {
+      font-size: 1rem;
   }
 }
