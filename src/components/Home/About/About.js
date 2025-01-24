@@ -36,7 +36,7 @@ function About({ aboutRef }) {
       What We Are Doing
     </h2>
     <p className="margin-0">
-      We specialize in a wide range of IT solutions, from mobile app development to website creation, and innovative software for billing and jewelry schemes.
+      We specialize in a wide range of IT solutions, from mobile app development to website creation, and innovative software for billing and Jewelleryschemes.
     </p>
   </div>
   <div id="servicesAccordion" className="accordion">
@@ -67,7 +67,7 @@ function About({ aboutRef }) {
     <div className="card" onClick={handleClick}>
       <div className="card-header">
         <a className="collapsed card-link" data-toggle="collapse" href="#collapseFive">
-          Billing Software
+        ERP billing software
         </a>
       </div>
       <div id="collapseFive" className="collapse" data-parent="#servicesAccordion">
@@ -79,12 +79,12 @@ function About({ aboutRef }) {
     <div className="card" onClick={handleClick}>
       <div className="card-header">
         <a className="collapsed card-link" data-toggle="collapse" href="#collapseSix">
-          Jewelry Schemes
+          JewellerySchemes
         </a>
       </div>
       <div id="collapseSix" className="collapse" data-parent="#servicesAccordion">
         <div className="card-body">
-          We offer tailor-made jewelry scheme solutions, including membership programs, loyalty rewards, and custom pricing for your customers, enhancing their shopping experience.
+          We offer tailor-made Jewelleryscheme solutions, including membership programs, loyalty rewards, and custom pricing for your customers, enhancing their shopping experience.
         </div>
       </div>
     </div>

@@ -3,19 +3,33 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS styles
 import Feature from './Feature';
 import './Features.css';
-import icon2 from '../../../images/whychooseus/icon/ecommerce.png';
-import icon1 from '../../../images/whychooseus/icon/flexible-cms.png';
-import icon3 from '../../../images/whychooseus/icon/page-speed.png';
-import icon4 from '../../../images/whychooseus/icon/responsive-design.png';
-
+import icon2 from '../../../images/whychooseus/icon/warehouse.svg';
+import icon1 from '../../../images/whychooseus/icon/chart.svg';
+import icon3 from '../../../images/whychooseus/icon/store-solid.svg';
+import icon4 from '../../../images/whychooseus/icon/android-brands-solid.svg';
+import icon5 from '../../../images/whychooseus/icon/app-store-ios-brands-solid.svg';
+import icon6 from '../../../images/whychooseus/icon/webflow-brands-solid.svg';
+import icon7 from '../../../images/whychooseus/icon/file-invoice-dollar-solid.svg';
+import icon8 from '../../../images/whychooseus/icon/person-booth-solid.svg';
+import icon9 from '../../../images/whychooseus/icon/code-branch-solid.svg';
+import icon10 from '../../../images/whychooseus/icon/accusoft-brands-solid.svg';
+import icon11 from '../../../images/whychooseus/icon/coins-solid.svg';
+import icon12 from '../../../images/whychooseus/icon/money-bill-transfer-solid.svg';
 const featureData = [
-  { id: 1, icon: icon4, title: 'Jewellery Saving Scheme' },
-  { id: 2, icon: icon3, title: 'Jewellery Catalog' },
-  { id: 3, icon: icon2, title: 'Retail Operation' },
-  { id: 4, icon: icon1, title: 'Android Development' },
-  { id: 5, icon: icon1, title: 'iOS Development' },
-  { id: 6, icon: icon1, title: 'Scheme Website Development' },
-  { id: 7, icon: icon1, title: 'Billing Software' },
+  { id: 1, icon: icon2, title: 'Inventary Management' },
+  { id: 2, icon: icon1, title: 'Sales Management' },
+  { id: 3, icon: icon3, title: 'Purchase Management' },
+  { id: 4, icon: icon4, title: 'Android Development' },
+  { id: 5, icon: icon5, title: 'iOS Development' },
+  { id: 6, icon: icon6, title: 'Scheme Website Development' },
+  { id: 8, icon: icon7, title: 'Billing Software' },
+  { id: 9, icon: icon8, title: 'Customer Relationship Management' },
+  { id: 10, icon: icon9, title: 'Branch Management' },
+  { id: 11, icon: icon10, title: 'Account Management' },
+  { id: 12, icon: icon11, title: 'Gold Scheme Mangement' },
+  { id: 13, icon: icon12, title: 'Fastest Billing' },
+  
+  
 ];
 
 function Features() {

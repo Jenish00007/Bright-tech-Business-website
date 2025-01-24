@@ -55,9 +55,9 @@ function Home() {
             <div ref={refs.services}>
                 <Services />
             </div>
-            <div ref={refs.features}>
+            {/* <div ref={refs.features}>
                 <Features />
-            </div>
+            </div> */}
             <div ref={refs.careers}>
                 <Careers />
             </div>

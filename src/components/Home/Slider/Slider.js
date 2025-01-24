@@ -6,7 +6,7 @@ import workstation from '../../../images/slider/solution/2nd.png';
 function Slider() {
     return (
         <div className='slider-container'>
-            <div id="myCarousel" className="carousel slide" data-ride="carousel">
+            <div id="myCarousel" className="carousel slide" data-ride="carousel" data-interval="1800">
                 <ol className="carousel-indicators">
                     <li data-target="#myCarousel" data-slide-to="0" className="active"></li>
                     <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -16,13 +16,13 @@ function Slider() {
                         <div className="row slide-part">
                             <div className="col-md-6 col-sm-12">
                                 <div className="slide-des">
-                                    <h4 className="text-white fade-in" style={{ fontWeight: '400' }}>MANAGE IT, SOFTWARE</h4>
-                                    <h2 className="text-white scale-up">BRIGHTECH SOFTWARE SOLUTION</h2>
-                                    <h3 className="text-white bounce-in">DEVELOPMENT COMPANY</h3>
+                                    <h4 className="text-dark fade-in" style={{ fontWeight: '400' }}>MANAGE IT, SOFTWARE</h4>
+                                    <h2 className="text-dark scale-up">BRIGHTECH SOFTWARE SOLUTION</h2>
+                                    <h3 className="text-dark bounce-in">DEVELOPMENT COMPANY</h3>
                                 </div>
                             </div>
                             <div className="col-md-6">
-                                <img src={notebook} className="slide-image" alt="" />
+                                <img src={notebook} className="slide-image h-50" alt="" />
                             </div>
                         </div>
                     </div>
@@ -30,13 +30,13 @@ function Slider() {
                         <div className="row slide-part">
                             <div className="col-md-6 col-sm-12">
                                 <div className="slide-des">
-                                    <h4 className="text-white fade-in" style={{ fontWeight: '400' }}>IT SOFTWARE & DESIGN</h4>
-                                    <h2 className="text-white scale-up">BRIGHTECH SOFTWARE SOLUTION</h2>
-                                    <h3 className="text-white bounce-in">DEVELOPMENT COMPANY</h3>
+                                    <h4 className="text-dark fade-in" style={{ fontWeight: '400' }}>IT SOFTWARE & DESIGN</h4>
+                                    <h2 className="text-dark scale-up">BRIGHTECH SOFTWARE SOLUTION</h2>
+                                    <h3 className="text-dark bounce-in">DEVELOPMENT COMPANY</h3>
                                 </div>
                             </div>
                             <div className="col-md-6">
-                                <img src={workstation} className="slide-image" alt="" />
+                                <img src={workstation} className="slide-image h-50" alt="" />
                             </div>
                         </div>
                     </div>

@@ -23,7 +23,7 @@ const servicesData = [
     {
         id: 3,
         name: 'APP DESIGN',
-        description: 'Brightech Software Solutions presents the Jewellery Saving Scheme App with two plans: Dream Gold for regular savings with bonuses and Digi Gold for savings in gold weight at locked rates.',
+        description: 'Our team specializes in creating custom mobile and web applications that are scalable, user-friendly, and designed to meet the unique needs of your business.',
         icon: icon3
     },
     {

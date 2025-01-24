@@ -50,7 +50,7 @@ function Navbar({ scrollToSection }) {
 
     return (
         <>
-            <div className="toolbar-area">
+            {/* <div className="toolbar-area">
                 <div className="inner-tools-area">
                     <div className="row">
                         <div className="col-md-2 toolsbar">
@@ -78,7 +78,7 @@ function Navbar({ scrollToSection }) {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
             <div className={`Navbar ${isLoaded ? 'slide-down' : ''} ${isScrolled ? 'scrolled' : ''}`}>
                 <div className="navbar-container">
