@@ -7,6 +7,8 @@ import PrivacyPolicy from './components/Home/PrivacyPolicy/PrivacyPolicy';
 import TermsConditions from './components/Home/Termsconditions/Termsconditions';
 import Home from './components/Home/Home'; // Import Home component
 import './App.css';
+import RefundPolicy from './components/Home/Refund Policy/RefundPolicy';
+import CancellationPolicy from './components/Home/Cancellation Policy/CancellationPolicy';
 
 function App() {
     return (
@@ -22,6 +24,10 @@ function App() {
                     <Route path="/terms-of-use" element={<TermsConditions />} />
                     {/* Privacy Policy */}
                     <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+                    {/* Cancellation Policy */}
+                    <Route path="/cancellation-policy" element={<CancellationPolicy/>} />
+                    {/* Refund Policy */}
+                    <Route path="/refund-policy" element={<RefundPolicy/>} />
                 </Routes>
                 <Footer />
             </div>
