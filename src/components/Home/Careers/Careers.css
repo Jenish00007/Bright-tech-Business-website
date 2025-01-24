@@ -2,6 +2,7 @@
   width: 100%;
   padding: 40px 20px;
   box-sizing: border-box;
+  background-color: #f9f9f9; /* Added a light background for better contrast */
 }
 
 @media (min-width: 768px) {
@@ -12,27 +13,28 @@
 
 @media (min-width: 1024px) {
   .careers-container {
-    padding: 100px;
+    padding: 80px 60px;
   }
 }
 
 .careers-title {
   text-align: center;
-  font-size: 24px;
+  font-size: 26px;
   font-weight: bold;
-  margin-bottom: 30px;
+  color: #333;
+  margin-bottom: 40px;
 }
 
 @media (min-width: 768px) {
   .careers-title {
-    font-size: 28px;
+    font-size: 32px;
   }
 }
 
 .careers-content {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 30px;
 }
 
 @media (min-width: 1024px) {
@@ -40,7 +42,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 60px;
+    gap: 50px;
   }
 }
 
@@ -57,6 +59,11 @@
 
 .careers-form {
   width: 100%;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .form-group {
@@ -67,6 +74,8 @@
   display: block;
   margin-bottom: 8px;
   font-weight: bold;
+  font-size: 14px;
+  color: #444;
 }
 
 .careers-form input,
@@ -81,7 +90,7 @@
 
 .careers-form textarea {
   resize: none;
-  height: 100px;
+  height: 120px;
 }
 
 .file-upload {
@@ -100,10 +109,11 @@
   background-color: #512DA8;
   color: white;
   font-size: 16px;
+  font-weight: bold;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s;
 }
 
 @media (min-width: 768px) {
@@ -115,6 +125,7 @@
 
 .submit-btn:hover {
   background-color: #673AB7;
+  transform: scale(1.05);
 }
 
 .careers-image-section {
@@ -138,11 +149,12 @@
   height: auto;
   border-radius: 5px;
   display: block;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .careers-description {
-  font-size: 14px;
-  color: #333;
+  font-size: 15px;
+  color: #444;
   line-height: 1.6;
   text-align: center;
 }
@@ -150,11 +162,18 @@
 /* AOS Animation Customizations */
 [data-aos] {
   opacity: 0;
-  transform: translateY(50px);
-  transition: all 1s ease-out;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
 }
 
 [data-aos].aos-animate {
   opacity: 1;
   transform: translateY(0);
+}
+
+.careers-form input {
+  width: 100%;
+  height: 40px;
+  padding: 8px;
+  font-size: 14px;
 }

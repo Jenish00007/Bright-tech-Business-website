@@ -12,8 +12,10 @@
 }
 
 .slide-des {
-  padding: 40px; /* Increased padding */
-  padding-left: 12%; /* Increased left padding */
+  padding: 40px;
+  /* Increased padding */
+  padding-left: 12%;
+  /* Increased left padding */
   animation: slideInLeft 1s ease-out;
 }
 
@@ -21,7 +23,8 @@
   width: 90%;
   animation: slideInRight 1s ease-out;
   margin-top: 80px;
-  padding: 20px; /* Increased padding */
+  padding: 20px;
+  /* Increased padding */
 }
 
 @keyframes slideInLeft {
@@ -29,6 +32,7 @@
     transform: translateX(-100%);
     opacity: 0;
   }
+
   to {
     transform: translateX(0);
     opacity: 1;
@@ -40,6 +44,7 @@
     transform: translateX(100%);
     opacity: 0;
   }
+
   to {
     transform: translateX(0);
     opacity: 1;
@@ -55,6 +60,7 @@
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -69,6 +75,7 @@
     transform: scale(0.8);
     opacity: 0.5;
   }
+
   to {
     transform: scale(1);
     opacity: 1;
@@ -84,14 +91,17 @@
     transform: scale(0.3);
     opacity: 0;
   }
+
   50% {
     transform: scale(1.05);
     opacity: 0.7;
   }
+
   70% {
     transform: scale(0.95);
     opacity: 0.9;
   }
+
   to {
     transform: scale(1);
     opacity: 1;
@@ -108,6 +118,7 @@
     transform: rotateY(90deg);
     opacity: 0;
   }
+
   to {
     transform: rotateY(0deg);
     opacity: 1;
@@ -123,6 +134,7 @@
     transform: scale(0.5);
     opacity: 0;
   }
+
   to {
     transform: scale(1);
     opacity: 1;
@@ -138,6 +150,7 @@
     transform: translateY(20px);
     opacity: 0;
   }
+
   to {
     transform: translateY(0);
     opacity: 1;
@@ -147,54 +160,91 @@
 /* Responsive Adjustments */
 @media only screen and (max-width: 1200px) {
   .slide-des {
-    padding: 40px; /* Increased padding */
-    padding-left: 10%; /* Increased left padding */
+    padding: 40px;
+    /* Increased padding */
+    padding-left: 10%;
+    /* Increased left padding */
   }
+
   .slide-des h4 {
     font-size: 15px;
   }
+
   .slide-des h1 {
     font-size: 2rem;
   }
+
   .slide-des h3 {
     font-size: 20px;
   }
+
   .slide-image {
     width: 65%;
-    padding: 25px; /* Increased padding */
+    padding: 25px;
+    /* Increased padding */
   }
 }
 
 @media only screen and (max-width: 1055px) {
   .slide-des {
-    padding: 30px; /* Increased padding */
-    padding-left: 8%; /* Increased left padding */
+    padding: 30px;
+    /* Increased padding */
+    padding-left: 8%;
+    /* Increased left padding */
   }
+
   .slide-des h4 {
     font-size: 15px;
   }
+
   .slide-des h1 {
     font-size: 30px;
     margin-top: -25px;
     margin-bottom: -10px;
   }
+
   .slide-des h3 {
     font-size: 20px;
   }
+
   .slide-image {
     width: 55%;
-    padding: 20px; /* Increased padding */
+    padding: 20px;
+    /* Increased padding */
   }
 }
 
 @media only screen and (max-width: 765px) {
   .slide-des {
-    padding: 25px; /* Increased padding */
-    padding-left: 7% !important; /* Increased left padding */
+    padding: 25px;
+    /* Increased padding */
+    padding-left: 7% !important;
+    /* Increased left padding */
     text-align: center !important;
     padding-bottom: 30px !important;
   }
+
   .slide-image {
     display: none;
   }
 }
+
+/* h2 {
+
+  color: black;
+  font-family: "arial";
+  font-size: 2em;
+  margin: 10px 0 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  animation: animtext 4s steps(80, end);
+  transition: all cubic-bezier(0.1, 0.7, 1.0, 0.1);
+}
+
+@keyframes animtext {
+  from {
+    width: 0;
+    transition: all 2s ease-in-out;
+  }
+} */

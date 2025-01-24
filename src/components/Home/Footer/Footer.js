@@ -31,7 +31,7 @@ function Footer() {
                                 <li>
                                     <i className="flaticon-call"></i>
                                     <div className="desc">
-                                        <a href="tel:+8801739753105">9688192922</a>
+                                        <a href="">9688192922</a>
                                     </div>
                                 </li>
                                 <li>
@@ -48,7 +48,7 @@ function Footer() {
                         </div>
 
                         {/* Latest Posts Section */}
-                        <div className="footer-widget posts-widget">
+                        {/* <div className="footer-widget posts-widget">
                             <h4 className="widget-title">Latest Posts</h4>
                             <div className="footer-post">
                                 {[
@@ -69,6 +69,18 @@ function Footer() {
                                     </div>
                                 ))}
                             </div>
+                        </div> */}
+                        {/* Latest Posts Section */}
+                        <div className="footer-widget posts-widget">
+                            <h4 className="widget-title">Policy</h4>
+                            <div className="footer-post">
+                            <div className="policy-links">
+                                <Link to="/terms-and-Conditions">Terms and Conditions</Link>
+                                <Link to="/privacy-policy">Privacy Policy</Link>
+                                <Link to="/refund-policy">Refund Policy</Link>
+                                <Link to="/Cancellation-policy">Cancellation Policy</Link>
+                            </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -77,12 +89,12 @@ function Footer() {
                     <div className="footer-bottom-content">
                         <div className="copyright-section">
                             <p>© Copyright 2025 Brightech Software Solutions. All Rights Reserved.</p>
-                            <div className="policy-links">
-                                <Link to="/terms-of-use">Terms and Conditions</Link>
+                            {/* <div className="policy-links">
+                                <Link to="/terms-and-Conditions">Terms and Conditions</Link>
                                 <Link to="/privacy-policy">Privacy Policy</Link>
                                 <Link to="/refund-policy">Refund Policy</Link>
                                 <Link to="/Cancellation-policy">Cancellation Policy</Link>
-                            </div>
+                            </div> */}
                         </div>
                         <div className="social-section">
                             <ul className="footer-social">

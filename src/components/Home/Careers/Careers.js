@@ -48,7 +48,7 @@ const Careers = () => {
 
             <div className="form-group">
               <label htmlFor="mobile">Mobile No. *</label>
-              <input type="text" id="mobile" name="mobile" required />
+              <input type="text" id="mobile" name="mobile" required  />
             </div>
 
             <div className="form-group">

@@ -11,37 +11,37 @@ const teamMembers = [
         id: 1,
         name: 'Suresh Ramasamy',
         role: 'MD',
-        image: ceo,
+        // image: ceo,
     },
     {
         id: 2,
         name: 'Mrs. Sathyapriya Ashok Kumar',
         role: 'CEO & Founder',
-        image: developer,
+        // image: developer,
     },
     {
         id: 3,
         name: 'Mr. Vigneshwaran',
         role: 'Web Developer',
-        image: marketer,
+        // image: marketer,
     },
     {
         id: 4,
         name: 'Miss. Sandhya',
         role: 'Web Developer',
-        image: marketer,
+        // image: marketer,
     },
     {
         id: 5,
         name: 'Mr. Sugibalan',
         role: 'Web Developer',
-        image: marketer,
+       // image: marketer,
     },
     {
         id: 6,
         name: 'Mr. Baskar',
         role: 'Web Developer',
-        image: marketer,
+        //image: marketer,
     }
 ];
 
@@ -64,9 +64,9 @@ function Team() {
                         {[...teamMembers, ...teamMembers].map((member, index) => (
                             <div className="team-item-wrap" key={`${member.id}-${index}`}>
                                 <div className="team-wrap">
-                                    <div className="image-inner">
+                                    {/* <div className="image-inner">
                                         <img src={member.image} alt={member.name} />
-                                    </div>
+                                    </div> */}
                                 </div>
                                 <div className="team-content">
                                     <h4 className="person-name">{member.name}</h4>
