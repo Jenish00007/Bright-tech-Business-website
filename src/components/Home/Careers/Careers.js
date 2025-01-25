@@ -33,7 +33,7 @@ const Careers = () => {
           <div className="careers-image-container">
             <img src={careerImage} alt="Join Our Team" className="careers-image" />
           </div>
-          <p className="careers-description" data-aos="fade-up" data-aos-delay="600">
+          <p className="careers-description" data-aos="fade-up" data-aos-delay="400">
             IF YOU ARE A HARDWORKING, BRIGHT, ENTHUSIASTIC, RESULT ORIENTED AND
             ENERGETIC INDIVIDUAL SEEKING TO CONQUER HEIGHTS, JILABA IS THE RIGHT
             PLACE FOR YOU TO BUILD YOUR CAREER.
