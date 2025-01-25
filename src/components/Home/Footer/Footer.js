@@ -75,7 +75,7 @@ function Footer() {
                             <h4 className="widget-title">Policy</h4>
                             <div className="footer-post">
                             <div className="policy-links">
-                                <Link to="/terms-and-Conditions">Terms and Conditions</Link>
+                                <Link to="/terms-of-use">Terms and Conditions</Link>
                                 <Link to="/privacy-policy">Privacy Policy</Link>
                                 <Link to="/refund-policy">Refund Policy</Link>
                                 <Link to="/Cancellation-policy">Cancellation Policy</Link>
