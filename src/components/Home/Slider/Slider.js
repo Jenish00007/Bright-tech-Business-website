@@ -2,6 +2,9 @@ import React from 'react';
 import './Slider.css';
 import notebook from '../../../images/slider/solution/1st.png';
 import workstation from '../../../images/slider/solution/2nd.png';
+import Typewriter from "./typewriter";
+import { ReactTyped } from "react-typed";
+
 
 function Slider() {
     return (
@@ -17,7 +20,7 @@ function Slider() {
                             <div className="col-md-6 col-sm-12">
                                 <div className="slide-des">
                                     <h4 className="text-dark fade-in" style={{ fontWeight: '400' }}>MANAGE IT, SOFTWARE</h4>
-                                    <h2 className="text-dark scale-up">BRIGHTECH SOFTWARE SOLUTION</h2>
+                                    <h2 className="text-dark scale-up letter">{" "} <ReactTyped strings={["BRIGHTECH SOFTWARE SOLUTION"]} typeSpeed={200} loop /></h2>
                                     <h3 className="text-dark bounce-in">DEVELOPMENT COMPANY</h3>
                                 </div>
                             </div>
@@ -31,7 +34,7 @@ function Slider() {
                             <div className="col-md-6 col-sm-12">
                                 <div className="slide-des">
                                     <h4 className="text-dark fade-in" style={{ fontWeight: '400' }}>IT SOFTWARE & DESIGN</h4>
-                                    <h2 className="text-dark scale-up">BRIGHTECH SOFTWARE SOLUTION</h2>
+                                    <h2 className="text-dark scale-up">{" "} <ReactTyped strings={["BRIGHTECH SOFTWARE SOLUTION"]} typeSpeed={100} loop /></h2>
                                     <h3 className="text-dark bounce-in">DEVELOPMENT COMPANY</h3>
                                 </div>
                             </div>

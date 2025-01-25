@@ -76,9 +76,9 @@ function Home() {
             <div>
                 {/* <SkillSet />  Add this section here if you want it to appear */}
             </div>
-            <div ref={refs.blog}>
+            {/* <div ref={refs.blog}>
                 <Blogs />
-            </div>
+            </div> */}
             {/* <PrivacyPolicy/>
             <TermsConditions/> */}
             {/* <Footer /> */}

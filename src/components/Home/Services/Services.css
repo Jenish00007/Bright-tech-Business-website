@@ -58,6 +58,7 @@
 
 .icon-part img {
     width: 85%;
+    fill: aqua;
     height: auto;
     object-fit: contain;
 }
