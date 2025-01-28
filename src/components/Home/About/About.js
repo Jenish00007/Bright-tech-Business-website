@@ -67,7 +67,7 @@ function About({ aboutRef }) {
     <div className="card" onClick={handleClick}>
       <div className="card-header">
         <a className="collapsed card-link" data-toggle="collapse" href="#collapseFive">
-        ERP billing software
+        ERP Jewellery billing software
         </a>
       </div>
       <div id="collapseFive" className="collapse" data-parent="#servicesAccordion">
@@ -79,7 +79,7 @@ function About({ aboutRef }) {
     <div className="card" onClick={handleClick}>
       <div className="card-header">
         <a className="collapsed card-link" data-toggle="collapse" href="#collapseSix">
-          JewellerySchemes
+          Jewellery Saving Schemes
         </a>
       </div>
       <div id="collapseSix" className="collapse" data-parent="#servicesAccordion">
